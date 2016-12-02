@@ -99,7 +99,7 @@ return [
 
     'custom' => [
         'email' => [
-            'required' => 'We need your email address also',
+            // 'required' => 'We need your email address also',
         ],
     ],
 
@@ -115,7 +115,7 @@ return [
     */
 
     'attributes' => [
-        'name' => 'Full Name',
+        // 'name' => 'Full Name',
     ],
 
 ];

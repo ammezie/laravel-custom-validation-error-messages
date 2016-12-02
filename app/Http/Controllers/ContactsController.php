@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\ContactFormRequest;
 
 class ContactsController extends Controller
 {
@@ -37,7 +38,7 @@ class ContactsController extends Controller
         	'message.required'  => 'c\'mon, you want to contact me without saying anything?',
     	];
 
-    	$this->validate($request, $rules);
+    	$this->validate($request, $rules, $customMessages);
 
     	// send contact details to email address
 
